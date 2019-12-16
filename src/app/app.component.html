@@ -7,9 +7,13 @@
   </div>
 </mat-toolbar>
 
-<mat-spinner *ngIf="loading"></mat-spinner>
+<div class="d-flex align-items-center justify-content-center w-100 mt-4" *ngIf="loading">
+  <h4 class="mb-0 mr-3">Loading Scoreboard</h4>
+  <mat-spinner diameter="30"></mat-spinner>
+</div>
 
 <table mat-table
+       *ngIf="!loading"
        [dataSource]="userPicks" multiTemplateDataRows
        class="mat-elevation-z8">
   <ng-container matColumnDef="{{column}}" *ngFor="let column of columnsToDisplay">
