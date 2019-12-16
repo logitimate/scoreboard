@@ -6,7 +6,7 @@
   "background_color": "#fafafa",
   "display": "standalone",
   "scope": "/scoreboard",
-  "start_url": "/scoreboard",
+  "start_url": "https://logitimate.github.io/scoreboard/",
   "icons": [
     {
       "src": "assets/icons/icon.svg",
