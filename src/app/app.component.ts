@@ -1,5 +1,4 @@
 import '@pwabuilder/pwainstall';
-
 import {Component, HostListener, OnInit} from '@angular/core';
 import {BowlService} from './bowl.service';
 import {UserPicks} from './dtos/user-picks';
@@ -23,7 +22,7 @@ export class AppComponent implements OnInit {
   expandedElement: any;
   columnsToDisplay = ['name', 'wins', 'losses'];
 
-  @HostListener('document:visibilitychange', ['$event'])
+  @HostListener('document:visibilitychange', [])
   visibilityChange() {
     if (!document.hidden) {
       this.loadPicks();
