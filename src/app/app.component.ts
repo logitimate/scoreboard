@@ -31,7 +31,10 @@ export class AppComponent implements OnInit {
     }
   }
 
-  constructor(private bowlService: BowlService, private swUpdate: SwUpdate, private snackBar: MatSnackBar) {
+  constructor(
+    private bowlService: BowlService,
+    private swUpdate: SwUpdate,
+    private snackBar: MatSnackBar) {
   }
 
   ngOnInit(): void {
