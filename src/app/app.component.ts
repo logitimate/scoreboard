@@ -3,6 +3,8 @@ import {Component, HostListener, OnInit} from '@angular/core';
 import {BowlService} from './bowl.service';
 import {UserPicks} from './dtos/user-picks';
 import {animate, state, style, transition, trigger} from '@angular/animations';
+import {SwUpdate} from '@angular/service-worker';
+import {MatSnackBar} from '@angular/material';
 
 @Component({
   selector: 'app-root',
@@ -30,11 +32,22 @@ export class AppComponent implements OnInit {
     }
   }
 
-  constructor(private bowlService: BowlService) {
+  constructor(
+    private bowlService: BowlService,
+    private swUpdate: SwUpdate,
+    private snackBar: MatSnackBar) {
   }
 
   ngOnInit(): void {
     this.loadPicks();
+    this.swUpdate.available.subscribe(event => {
+      console.log('[App] Update available: current version is', event.current, 'available version is', event.available);
+      const snackBarRef = this.snackBar.open('Newer version of the app is available', 'Refresh');
+      snackBarRef.onAction().subscribe(() => {
+        location.reload();
+      });
+
+    });
   }
 
   loadPicks() {

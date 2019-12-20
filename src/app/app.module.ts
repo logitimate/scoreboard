@@ -11,6 +11,7 @@ import {
   MatIconModule,
   MatProgressSpinnerModule,
   MatSelectModule,
+  MatSnackBarModule,
   MatTableModule,
   MatToolbarModule
 } from '@angular/material';
@@ -22,6 +23,7 @@ import {
   imports: [
     HttpClientModule,
     MatIconModule,
+    MatSnackBarModule,
     MatButtonModule,
     MatSelectModule,
     MatProgressSpinnerModule,

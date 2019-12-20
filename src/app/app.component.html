@@ -7,7 +7,11 @@
   </div>
 </mat-toolbar>
 
-<mat-spinner *ngIf="loading"></mat-spinner>
+<div class="d-flex align-items-center justify-content-center w-100 mt-4" *ngIf="loading">
+  <h4 class="mb-0 mr-3">Loading Scoreboard</h4>
+  <mat-spinner diameter="30"></mat-spinner>
+</div>
+
 <mat-form-field *ngIf="!loading" class="w-100 p-2">
   <mat-label>See Differences Between</mat-label>
   <mat-select (selectionChange)="selectUser($event.value)">
@@ -17,6 +21,7 @@
   </mat-select>
 </mat-form-field>
 <table mat-table
+       *ngIf="!loading"
        [dataSource]="userPicks" multiTemplateDataRows
        class="mat-elevation-z8">
   <ng-container matColumnDef="{{column}}" *ngFor="let column of columnsToDisplay">
