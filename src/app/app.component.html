@@ -8,7 +8,14 @@
 </mat-toolbar>
 
 <mat-spinner *ngIf="loading"></mat-spinner>
-
+<mat-form-field *ngIf="!loading" class="w-100 p-2">
+  <mat-label>See Differences Between</mat-label>
+  <mat-select (selectionChange)="selectUser($event.value)">
+    <mat-option *ngFor="let userPick of userPicks" [value]="userPick">
+      {{userPick.name}}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
 <table mat-table
        [dataSource]="userPicks" multiTemplateDataRows
        class="mat-elevation-z8">
@@ -24,7 +31,14 @@
            [@detailExpand]="element == expandedElement ? 'expanded' : 'collapsed'">
         <div class="example-element-description">
           <div *ngFor="let pick of element.picks">
-            <h6 class="mb-0">{{pick.bowl}}</h6>
+            <div class="d-flex align-items-center justify-content-start">
+              <h6 class="mb-0">
+                {{pick.bowl}}
+              </h6>
+              <mat-icon class="text-success" *ngIf="pick.win">check</mat-icon>
+              <mat-icon class="text-danger" *ngIf="pick.loss">close</mat-icon>
+            </div>
+
             <p>{{pick.pick}}</p>
           </div>
         </div>

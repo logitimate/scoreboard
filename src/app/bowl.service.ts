@@ -31,15 +31,19 @@ export class BowlService {
       } else {
         const bowl = cells.find(c => Number(c.gs$cell.row) === 1 && Number(c.gs$cell.col) === col).content.$t;
         const pick = cell.content.$t;
-        if (pick.trim().includes('(W)')) {
+        const win = pick.trim().includes('(W)');
+        const loss = pick.trim().includes('(L)');
+        if (win) {
           user.wins = user.wins + 1;
-        } else if (pick.trim().includes('(L)')) {
+        } else if (loss) {
           user.losses = user.losses + 1;
         }
         user.picks.push({
           bowl,
           col,
-          pick
+          pick,
+          win,
+          loss
         });
       }
       return userList;

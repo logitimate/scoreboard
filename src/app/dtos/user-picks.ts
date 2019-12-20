@@ -4,6 +4,7 @@ export class UserPicks {
   row: number;
   wins = 0;
   losses = 0;
+  differences = 0;
 
   constructor(data) {
     this.name = data.name;
@@ -16,4 +17,6 @@ export interface PickData {
   col: number;
   pick: string;
   bowl: string;
+  win: boolean;
+  loss: boolean;
 }

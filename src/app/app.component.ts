@@ -18,9 +18,10 @@ import {animate, state, style, transition, trigger} from '@angular/animations';
 })
 export class AppComponent implements OnInit {
   userPicks: Array<UserPicks>;
+  selectedUserPicks: UserPicks;
   loading = false;
   expandedElement: any;
-  columnsToDisplay = ['name', 'wins', 'losses'];
+  columnsToDisplay = ['name', 'wins', 'losses', 'differences'];
 
   @HostListener('document:visibilitychange', [])
   visibilityChange() {
@@ -42,6 +43,21 @@ export class AppComponent implements OnInit {
       this.loading = false;
       this.userPicks = picks.sort((pick1, pick2) => {
         return pick1.wins > pick2.wins ? -1 : 1;
+      });
+    });
+  }
+
+  selectUser(selectedUserPicks: UserPicks) {
+    this.selectedUserPicks = selectedUserPicks;
+    this.userPicks.forEach(up => {
+      up.differences = 0;
+      up.picks.forEach(p => {
+        const selectedUserPick = selectedUserPicks.picks.find(suPicks => suPicks.col === p.col).pick;
+        const isSameUser = selectedUserPicks.row === up.row;
+        const undecidedGame = !p.win && !p.loss;
+        if (p.pick === selectedUserPick && p.col <= 44 && !isSameUser && undecidedGame) {
+          up.differences++;
+        }
       });
     });
   }

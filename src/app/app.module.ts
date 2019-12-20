@@ -6,7 +6,14 @@ import {ServiceWorkerModule} from '@angular/service-worker';
 import {environment} from '../environments/environment';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {HttpClientModule} from '@angular/common/http';
-import {MatButtonModule, MatIconModule, MatProgressSpinnerModule, MatTableModule, MatToolbarModule} from '@angular/material';
+import {
+  MatButtonModule,
+  MatIconModule,
+  MatProgressSpinnerModule,
+  MatSelectModule,
+  MatTableModule,
+  MatToolbarModule
+} from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -14,7 +21,9 @@ import {MatButtonModule, MatIconModule, MatProgressSpinnerModule, MatTableModule
   ],
   imports: [
     HttpClientModule,
+    MatIconModule,
     MatButtonModule,
+    MatSelectModule,
     MatProgressSpinnerModule,
     MatIconModule,
     MatTableModule,
