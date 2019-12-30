@@ -68,7 +68,7 @@ export class AppComponent implements OnInit {
         const selectedUserPick = selectedUserPicks.picks.find(suPicks => suPicks.col === p.col).pick;
         const isSameUser = selectedUserPicks.row === up.row;
         const undecidedGame = !p.win && !p.loss;
-        if (p.pick === selectedUserPick && p.col <= 44 && !isSameUser && undecidedGame) {
+        if (p.pick !== selectedUserPick && p.col !== 44 && !isSameUser && undecidedGame) {
           up.differences++;
         }
       });
