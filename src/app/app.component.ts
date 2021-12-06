@@ -46,7 +46,6 @@ export class AppComponent implements OnInit {
       snackBarRef.onAction().subscribe(() => {
         location.reload();
       });
-
     });
   }
 
@@ -65,10 +64,11 @@ export class AppComponent implements OnInit {
     this.userPicks.forEach(up => {
       up.differences = 0;
       up.picks.forEach(p => {
-        const selectedUserPick = selectedUserPicks.picks.find(suPicks => suPicks.col === p.col).pick;
-        const isSameUser = selectedUserPicks.row === up.row;
+        const selectedUserPick = selectedUserPicks.picks.find(suPicks => suPicks.bowl === p.bowl).pick;
+        const isSameUser = selectedUserPicks.name === up.name;
         const undecidedGame = !p.win && !p.loss;
-        if (p.pick !== selectedUserPick && p.col !== 44 && !isSameUser && undecidedGame) {
+        const isNotTiebreaker = !p.bowl.includes('Tiebreaker');
+        if (p.pick !== selectedUserPick && !isSameUser && undecidedGame && isNotTiebreaker) {
           up.differences++;
         }
       });
