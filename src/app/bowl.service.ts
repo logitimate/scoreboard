@@ -12,21 +12,22 @@ export class BowlService {
   }
 
   getPicks(): Observable<Array<UserPicks>> {
-    return this.http.get(`https://sheets.googleapis.com/v4/spreadsheets/1HYk8SrH1Rpqs9mV1GbEVF9z7RxisnVOrkX5jlsfa1HY/values:batchGet?key=AIzaSyBZz6fjQ2MG0S7o7_U35GREVZEO1yFUjZk&ranges=B1:AR12`)
+    return this.http.get(`https://sheets.googleapis.com/v4/spreadsheets/1HYk8SrH1Rpqs9mV1GbEVF9z7RxisnVOrkX5jlsfa1HY/values:batchGet?key=AIzaSyBZz6fjQ2MG0S7o7_U35GREVZEO1yFUjZk&ranges=B1:AR14`)
       .pipe(
         map((sheetData: any) => this.formatCells(sheetData.valueRanges[0].values))
       );
   }
 
   formatCells(cells: string[][]): Array<UserPicks> {
+    console.log(cells, 'cells');
     const bowlGames = cells[0];
     bowlGames.shift();
 
     return cells.reduce((userList: Array<UserPicks>, row, index) => {
-      if (index <= 1) {
+      if (index <= 0) {
         return userList;
-      }
 
+      }
       const name = row[0];
       row.shift();
       const picks = row.map((p, i) => this._generatePicks(p, bowlGames[i]));
