@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1671296479942,
+  "timestamp": 1671301179846,
   "index": "/scoreboard/index.html",
   "assetGroups": [
     {
@@ -13,7 +13,7 @@
       "urls": [
         "/scoreboard/favicon.ico",
         "/scoreboard/index.html",
-        "/scoreboard/main.0b12ffcb6134e8b0.js",
+        "/scoreboard/main.2524fc932cbdf5d7.js",
         "/scoreboard/manifest.webmanifest",
         "/scoreboard/polyfills.00fb5ffdfbd8f89a.js",
         "/scoreboard/runtime.434ca15f317cd933.js",
@@ -62,8 +62,8 @@
     "/scoreboard/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
     "/scoreboard/assets/icons/icon.svg": "9f0db2af0887df383773e1f70740883aa2d0eff0",
     "/scoreboard/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "/scoreboard/index.html": "130ce71ce679ca1e107dee0b165d3d353622dca4",
-    "/scoreboard/main.0b12ffcb6134e8b0.js": "8eb657c3da4aa2dfe51f0b764c8aa555b7e6409f",
+    "/scoreboard/index.html": "bd246c13888e70b29f10e0b1a2f9547a7ea179f4",
+    "/scoreboard/main.2524fc932cbdf5d7.js": "c5aba681b55792ef8aba08cc928870602cd4631a",
     "/scoreboard/manifest.webmanifest": "3164cf3180da41025761da0b3d14af4a7a5897e4",
     "/scoreboard/polyfills.00fb5ffdfbd8f89a.js": "48f03092cc39383caf79149be630ac73a229f080",
     "/scoreboard/runtime.434ca15f317cd933.js": "337f7eb3468577c5aae8bcdb4164dba0419d3e92",
