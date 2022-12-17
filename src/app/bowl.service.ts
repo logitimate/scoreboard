@@ -12,7 +12,7 @@ export class BowlService {
   }
 
   getPicks(): Observable<Array<UserPicks>> {
-    return this.http.get(`https://sheets.googleapis.com/v4/spreadsheets/1e0rZAfFB4Yf9Bc16gcNMWoYcHaJhNJUA0BEyB2P1hrw/values:batchGet?key=AIzaSyA2NSMKGqhbsWlaD9-TIUtu-3viusGQxFE&ranges=A1:AT14`)
+    return this.http.get(`https://sheets.googleapis.com/v4/spreadsheets/1e0rZAfFB4Yf9Bc16gcNMWoYcHaJhNJUA0BEyB2P1hrw/values:batchGet?key=AIzaSyA2NSMKGqhbsWlaD9-TIUtu-3viusGQxFE&ranges=A1:AT16`)
       .pipe(
         map((sheetData: any) => this.formatCells(sheetData.valueRanges[0].values))
       );
