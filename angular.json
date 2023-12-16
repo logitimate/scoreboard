@@ -129,7 +129,6 @@
       }
     }
   },
-  "defaultProject": "scoreboard",
   "schematics": {
     "@schematics/angular:component": {
       "styleext": "scss"
