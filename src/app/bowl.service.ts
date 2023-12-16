@@ -1,18 +1,15 @@
-import {Injectable} from '@angular/core';
 import {map} from 'rxjs/operators';
 import {Observable} from 'rxjs';
 import {PickData, UserPicks} from './dtos/user-picks';
 import {HttpClient} from '@angular/common/http';
+import { Injectable, inject } from '@angular/core';
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable({providedIn: 'root'})
 export class BowlService {
-  constructor(private http: HttpClient) {
-  }
+  private http = inject(HttpClient);
 
   getPicks(): Observable<Array<UserPicks>> {
-    return this.http.get(`https://sheets.googleapis.com/v4/spreadsheets/11Vl5ra1wCLvW7EFIBzgqTC_76Q5JW4F4u_WPI-6Gr64/values:batchGet?key=AIzaSyA2NSMKGqhbsWlaD9-TIUtu-3viusGQxFE&ranges=B1:BT16`)
+    return this.http.get(`https://sheets.googleapis.com/v4/spreadsheets/11Vl5ra1wCLvW7EFIBzgqTC_76Q5JW4F4u_WPI-6Gr64/values:batchGet?key=AIzaSyA2NSMKGqhbsWlaD9-TIUtu-3viusGQxFE&ranges=A1:AT16`)
       .pipe(
         map((sheetData: any) => this.formatCells(sheetData.valueRanges[0].values))
       );
@@ -52,6 +49,7 @@ export class BowlService {
   }
 
   private _generatePicks(pick: string, bowl: string): PickData {
+    console.log(pick,'pick')
     return {
       pick,
       bowl,
