@@ -1,7 +1,7 @@
 {
   "configVersion": 1,
-  "timestamp": 1702756379106,
-  "index": "C:/Program Files/Git/scoreboard/index.html",
+  "timestamp": 1702756604273,
+  "index": "/scoreboard/index.html",
   "assetGroups": [
     {
       "name": "app",
@@ -11,13 +11,13 @@
         "ignoreVary": true
       },
       "urls": [
-        "C:/Program Files/Git/scoreboard/favicon.ico",
-        "C:/Program Files/Git/scoreboard/index.html",
-        "C:/Program Files/Git/scoreboard/main.050f006714875514.js",
-        "C:/Program Files/Git/scoreboard/manifest.webmanifest",
-        "C:/Program Files/Git/scoreboard/polyfills.30330ac8b4f7e8ed.js",
-        "C:/Program Files/Git/scoreboard/runtime.67105780cb30a7b3.js",
-        "C:/Program Files/Git/scoreboard/styles.e8b2fd7b7328e264.css"
+        "/scoreboard/favicon.ico",
+        "/scoreboard/index.html",
+        "/scoreboard/main.050f006714875514.js",
+        "/scoreboard/manifest.webmanifest",
+        "/scoreboard/polyfills.30330ac8b4f7e8ed.js",
+        "/scoreboard/runtime.67105780cb30a7b3.js",
+        "/scoreboard/styles.e8b2fd7b7328e264.css"
       ],
       "patterns": []
     },
@@ -29,45 +29,45 @@
         "ignoreVary": true
       },
       "urls": [
-        "C:/Program Files/Git/scoreboard/MaterialIcons-Regular.196fa4a92dd6fa73.ttf",
-        "C:/Program Files/Git/scoreboard/MaterialIcons-Regular.1e50f5c2ffa6aba4.eot",
-        "C:/Program Files/Git/scoreboard/MaterialIcons-Regular.7ea2023eeca07427.woff2",
-        "C:/Program Files/Git/scoreboard/MaterialIcons-Regular.db852539204b1a34.woff",
-        "C:/Program Files/Git/scoreboard/assets/icons/icon-128x128.png",
-        "C:/Program Files/Git/scoreboard/assets/icons/icon-144x144.png",
-        "C:/Program Files/Git/scoreboard/assets/icons/icon-152x152.png",
-        "C:/Program Files/Git/scoreboard/assets/icons/icon-192x192.png",
-        "C:/Program Files/Git/scoreboard/assets/icons/icon-384x384.png",
-        "C:/Program Files/Git/scoreboard/assets/icons/icon-512x512.png",
-        "C:/Program Files/Git/scoreboard/assets/icons/icon-72x72.png",
-        "C:/Program Files/Git/scoreboard/assets/icons/icon-96x96.png",
-        "C:/Program Files/Git/scoreboard/assets/icons/icon.svg"
+        "/scoreboard/MaterialIcons-Regular.196fa4a92dd6fa73.ttf",
+        "/scoreboard/MaterialIcons-Regular.1e50f5c2ffa6aba4.eot",
+        "/scoreboard/MaterialIcons-Regular.7ea2023eeca07427.woff2",
+        "/scoreboard/MaterialIcons-Regular.db852539204b1a34.woff",
+        "/scoreboard/assets/icons/icon-128x128.png",
+        "/scoreboard/assets/icons/icon-144x144.png",
+        "/scoreboard/assets/icons/icon-152x152.png",
+        "/scoreboard/assets/icons/icon-192x192.png",
+        "/scoreboard/assets/icons/icon-384x384.png",
+        "/scoreboard/assets/icons/icon-512x512.png",
+        "/scoreboard/assets/icons/icon-72x72.png",
+        "/scoreboard/assets/icons/icon-96x96.png",
+        "/scoreboard/assets/icons/icon.svg"
       ],
       "patterns": []
     }
   ],
   "dataGroups": [],
   "hashTable": {
-    "C:/Program Files/Git/scoreboard/MaterialIcons-Regular.196fa4a92dd6fa73.ttf": "fc05de31234e0090f7ddc28ce1b23af4026cb1da",
-    "C:/Program Files/Git/scoreboard/MaterialIcons-Regular.1e50f5c2ffa6aba4.eot": "26fb8cecb5512223277b4d290a24492a0f09ede1",
-    "C:/Program Files/Git/scoreboard/MaterialIcons-Regular.7ea2023eeca07427.woff2": "09963592e8c953cc7e14e3fb0a5b05d5042e8435",
-    "C:/Program Files/Git/scoreboard/MaterialIcons-Regular.db852539204b1a34.woff": "c6c953c2ccb2ca9abb21db8dbf473b5a435f0082",
-    "C:/Program Files/Git/scoreboard/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
-    "C:/Program Files/Git/scoreboard/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
-    "C:/Program Files/Git/scoreboard/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
-    "C:/Program Files/Git/scoreboard/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
-    "C:/Program Files/Git/scoreboard/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
-    "C:/Program Files/Git/scoreboard/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
-    "C:/Program Files/Git/scoreboard/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
-    "C:/Program Files/Git/scoreboard/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
-    "C:/Program Files/Git/scoreboard/assets/icons/icon.svg": "9f0db2af0887df383773e1f70740883aa2d0eff0",
-    "C:/Program Files/Git/scoreboard/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "C:/Program Files/Git/scoreboard/index.html": "54ea7bccd716c5f11698421352b9abe8baefcb86",
-    "C:/Program Files/Git/scoreboard/main.050f006714875514.js": "f8b54cdacdc404abf438de243c2e713ac9f0f837",
-    "C:/Program Files/Git/scoreboard/manifest.webmanifest": "3164cf3180da41025761da0b3d14af4a7a5897e4",
-    "C:/Program Files/Git/scoreboard/polyfills.30330ac8b4f7e8ed.js": "dfb3d7d34fae136322ae652bd2b920322947348a",
-    "C:/Program Files/Git/scoreboard/runtime.67105780cb30a7b3.js": "b7cae5be8ad12ba04f7313a0774cec178323ab41",
-    "C:/Program Files/Git/scoreboard/styles.e8b2fd7b7328e264.css": "80416b2a12b0a94faa76b14ece088316184ea977"
+    "/scoreboard/MaterialIcons-Regular.196fa4a92dd6fa73.ttf": "fc05de31234e0090f7ddc28ce1b23af4026cb1da",
+    "/scoreboard/MaterialIcons-Regular.1e50f5c2ffa6aba4.eot": "26fb8cecb5512223277b4d290a24492a0f09ede1",
+    "/scoreboard/MaterialIcons-Regular.7ea2023eeca07427.woff2": "09963592e8c953cc7e14e3fb0a5b05d5042e8435",
+    "/scoreboard/MaterialIcons-Regular.db852539204b1a34.woff": "c6c953c2ccb2ca9abb21db8dbf473b5a435f0082",
+    "/scoreboard/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "/scoreboard/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "/scoreboard/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "/scoreboard/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "/scoreboard/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "/scoreboard/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "/scoreboard/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "/scoreboard/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "/scoreboard/assets/icons/icon.svg": "9f0db2af0887df383773e1f70740883aa2d0eff0",
+    "/scoreboard/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
+    "/scoreboard/index.html": "5c5bb9b5935ff37dccc1c2a8794895fb1bdd167f",
+    "/scoreboard/main.050f006714875514.js": "f8b54cdacdc404abf438de243c2e713ac9f0f837",
+    "/scoreboard/manifest.webmanifest": "3164cf3180da41025761da0b3d14af4a7a5897e4",
+    "/scoreboard/polyfills.30330ac8b4f7e8ed.js": "dfb3d7d34fae136322ae652bd2b920322947348a",
+    "/scoreboard/runtime.67105780cb30a7b3.js": "b7cae5be8ad12ba04f7313a0774cec178323ab41",
+    "/scoreboard/styles.e8b2fd7b7328e264.css": "80416b2a12b0a94faa76b14ece088316184ea977"
   },
   "navigationUrls": [
     {
