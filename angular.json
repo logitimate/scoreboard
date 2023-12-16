@@ -65,18 +65,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "scoreboard:build"
+            "buildTarget": "scoreboard:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "scoreboard:build:production"
+              "buildTarget": "scoreboard:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "scoreboard:build"
+            "buildTarget": "scoreboard:build"
           }
         },
         "test": {
