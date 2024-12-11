@@ -9,7 +9,7 @@ export class BowlService {
   private http = inject(HttpClient);
 
   getPicks(): Observable<Array<UserPicks>> {
-    return this.http.get(`https://sheets.googleapis.com/v4/spreadsheets/11Vl5ra1wCLvW7EFIBzgqTC_76Q5JW4F4u_WPI-6Gr64/values:batchGet?key=AIzaSyA2NSMKGqhbsWlaD9-TIUtu-3viusGQxFE&ranges=A1:AT16`)
+    return this.http.get(`https://sheets.googleapis.com/v4/spreadsheets/1DF9-xAcDVClECrSxgdboqk90nJO9cbT0OpU84Nguoms/values:batchGet?key=AIzaSyA2NSMKGqhbsWlaD9-TIUtu-3viusGQxFE&ranges=A1:AX16`)
       .pipe(
         map((sheetData: any) => this.formatCells(sheetData.valueRanges[0].values))
       );
@@ -23,7 +23,7 @@ export class BowlService {
         return userList;
       }
       
-      const name = row[0];
+      const name = row[1];
       row.splice(0, 2);
       row = row.filter(r => r !== '');
       const picks = row.map((p, i) => this._generatePicks(p, bowlGames[i]));
@@ -49,7 +49,6 @@ export class BowlService {
   }
 
   private _generatePicks(pick: string, bowl: string): PickData {
-    console.log(pick,'pick')
     return {
       pick,
       bowl,
