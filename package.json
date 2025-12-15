@@ -20,7 +20,7 @@
     "@angular/material": "19.0.2",
     "@angular/platform-browser": "19.0.3",
     "@angular/platform-browser-dynamic": "19.0.3",
-    "@angular/pwa": "^20.0.0",
+    "@angular/pwa": "^19.0.4",
     "@angular/router": "19.0.3",
     "@angular/service-worker": "19.0.3",
     "@pwabuilder/pwainstall": "^1.6.7",
