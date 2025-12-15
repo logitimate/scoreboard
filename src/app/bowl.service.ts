@@ -9,7 +9,7 @@ export class BowlService {
   private http = inject(HttpClient);
 
   getPicks(): Observable<Array<UserPicks>> {
-    return this.http.get(`https://sheets.googleapis.com/v4/spreadsheets/1DF9-xAcDVClECrSxgdboqk90nJO9cbT0OpU84Nguoms/values:batchGet?key=AIzaSyA2NSMKGqhbsWlaD9-TIUtu-3viusGQxFE&ranges=A1:AX16`)
+    return this.http.get(`https://sheets.googleapis.com/v4/spreadsheets/11npBIlQaH8GhotqIoL7OXMWMcWhKcJvKbRVWt5kNb68/values:batchGet?key=AIzaSyA2NSMKGqhbsWlaD9-TIUtu-3viusGQxFE&ranges=A1:AX16`)
       .pipe(
         map((sheetData: any) => this.formatCells(sheetData.valueRanges[0].values))
       );
